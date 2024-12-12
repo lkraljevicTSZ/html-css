@@ -1,6 +1,12 @@
 body{
 
-    background-image: url("https://seeklogo.com/images/C/CARNet-logo-2F1448D858-seeklogo.com.png")
+    background-image: url("https://seeklogo.com/images/C/CARNet-logo-2F1448D858-seeklogo.com.png");
+
+    background-repeat: no-repeat;
+
+    background-position: 200px 100px;
+
+    background-attachment: fixed;
 
 }
 h1{
