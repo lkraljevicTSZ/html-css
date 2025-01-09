@@ -1,0 +1,7 @@
+table, tr, td{
+
+    border: 5px solid pink;
+    border-style: dashed;
+    border-collapse: collapse;
+
+}
