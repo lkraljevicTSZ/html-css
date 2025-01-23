@@ -1,0 +1,12 @@
+.class1{
+
+    border-style: inset;
+
+}
+
+.class2{
+    border: 2px solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+
+}

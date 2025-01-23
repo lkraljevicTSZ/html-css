@@ -1,0 +1,31 @@
+p{
+
+    border-color: black;
+    border-width: 5px;
+
+}
+
+
+.p1{
+
+    border-style: dot-dot-dash;
+}
+
+.p2{
+
+    border-style: double;
+
+
+}
+
+.p3{
+
+    border-style: double;
+
+}
+
+.p4{
+
+    border-style: dashed ;
+
+}

@@ -1,0 +1,12 @@
+.div1{
+
+    border: 1px solid red;
+    margin-left:80px;
+
+}
+
+.p1{
+
+    margin-left: inherit;
+
+}
