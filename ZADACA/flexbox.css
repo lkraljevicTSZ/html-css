@@ -1,0 +1,69 @@
+.x-pocetak {
+    justify-content: flex-start;
+}
+.x-kraj {
+    justify-content: flex-end;
+}
+.x-centar {
+    justify-content: center;
+}
+.x-mjesta-izmedju {
+    justify-content: space-between;
+}
+.x-mjesta-odasvud {
+    justify-content: space-around;
+}
+.y-pocetak {
+    align-items: flex-start;
+}
+.y-kraj {
+    align-items: flex-end;
+}
+.y-centar {
+    align-items: center;
+}
+.stupac {
+    flex-direction: column;
+}
+.stupac-reverse {
+    flex-direction: column-reverse;
+}
+.redak {
+    flex-direction: row;
+}
+.redak-reverse {
+    flex-direction: row-reverse;
+}
+.po-redu {
+    order: 1;
+}
+.y-pocetak-pojedinacno {
+    align-self: flex-start;
+}
+.y-kraj-pojedinacno {
+    align-self: flex-end;
+}
+.y-centar-pojedinacno {
+    align-self: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+.align-pocetak {
+    align-content: flex-start;
+}
+.align-kraj {
+    align-content: flex-end;
+}
+.align-centar {
+    align-content: center;
+}
+.align-izmedju {
+    align-content: space-around;
+}
+.align-posvuda {
+    align-content: space-around;
+}
