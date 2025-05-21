@@ -1,0 +1,541 @@
+
+.x-os-pocetak {
+    justify-content: flex-start;
+}
+.x-os-kraj {
+    justify-content: flex-end;
+}
+.x-os-centar {
+    justify-content: center;
+}
+.x-os-mjesta-izmedju {
+    justify-content: space-between;
+}
+.x-os-mjesta-odasvud {
+    justify-content: space-around;
+}
+.y-os-pocetak {
+    align-items: flex-start;
+}
+.y-os-kraj {
+    align-items: flex-end;
+}
+.y-os-centar {
+    align-items: center;
+}
+.stupci {
+    flex-direction: column;
+}
+.stupci-reverse {
+    flex-direction: column-reverse;
+}
+.redci {
+    flex-direction: row;
+}
+.redci-reverse {
+    flex-direction: row-reverse;
+}
+.po-redu {
+    order: 1;
+}
+.y-os-pocetak-pojedinacno {
+    align-self: flex-start;
+}
+.y-os-kraj-pojedinacno {
+    align-self: flex-end;
+}
+.y-os-centar-pojedinacno {
+    align-self: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+.align-content-pocetak {
+    align-content: flex-start;
+}
+.align-content-kraj {
+    align-content: flex-end;
+}
+.align-content-centar {
+    align-content: center;
+}
+.align-content-izmedju {
+    align-content: space-around;
+}
+.align-content-odasvud {
+    align-content: space-around;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+
+main {
+    flex: 1;
+}
+
+header, footer, main {
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: whitesmoke;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.5rem;
+    height: 6.25rem;
+}
+
+.logo img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+
+
+header h1.naslov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0;
+    height: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.media-container {
+    padding: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.media-item {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    margin: 0;
+}
+
+.audio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem;
+}
+
+.audio-item audio {
+    width: 100%;
+}
+
+.video-item {
+    grid-column: 1 / -1;
+}
+
+.video-item video {
+    width: 100%;
+    max-height: 31.25rem;
+    object-fit: contain;
+}
+
+footer {
+    width: 100%;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: flex;
+    padding: 1.25rem 0;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.meni {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.meni a {
+    font-size: 1.1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.kartica {
+    border: 0.0625rem solid mintcream;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.tekst-container {
+    max-width: 28.125rem;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.kartice {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.kartica {
+    border: 0.0625rem solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 18.75rem;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.kartica img {
+    width: 100%;
+    height: auto;
+    max-width: 15.625rem;
+    border-radius: 0.5rem;
+}
+
+
+.kartica h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.kartica p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+
+}
+
+.kartica .cijena {
+    color: orangered;
+    font-weight: bold;
+}
+
+.kontakt-kartica {
+    border: 0.0625rem solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 25rem;
+    text-align: center;
+    background-color: lightgrey;
+    margin: 2rem auto;
+}
+
+.kontakt-kartica img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+
+.kontakt-kartica h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.kontakt-kartica p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.kontakt-podaci p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.zalba-kartica {
+    border: 0.0625rem solid mintcream;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 37.5rem;
+    background-color: whitesmoke;
+    margin: 3rem auto;
+    text-align: left;
+}
+
+.zalba-kartica label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.zalba-kartica input, .zalba-kartica textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.0625rem solid mintcream;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.zalba-kartica textarea {
+    height: 9.375rem;
+    resize: none;
+}
+
+.gumbi {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.gumbi button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.gumbi button:hover {
+    background-color: royalblue;
+}
+
+a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+@media (max-width: 48rem) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 6.25rem;
+        height: auto;
+        margin: 0.5rem 0;
+    }
+
+    header h1.naslov {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .meni {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .kartice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+}
+
+.tekst-slike img {
+    width: 100%;
+    max-width: 31.25rem;
+    display: block;
+    margin: auto;
+}
+
+
+.tekst-kontejner-sa-stranom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.25rem;
+}
+
+
+.tekst-kontejner-sa-stranom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tekst-slike img {
+    width: 200%;
+    max-width: 31.25rem;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+.tekst-prosireni {
+    max-width: 37.5rem;
+    text-align: justify;
+}
+
+
+
+.nase-ideje-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.nase-ideje-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nase-ideje-images img {
+    width: 15.625rem;
+    height: auto;
+    border-radius: 0.625rem;
+}
+
+
+.nase-ideje-audio {
+    display: flex;
+    justify-content: center;
+    gap: 0.9375rem;
+}
+
+.nase-ideje-video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nase-ideje-video video {
+    width: 37.5rem;
+    height: auto;
+    border-radius: 0.625rem;
+}
+
+.zalba-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+
+.zalba-kartica {
+    border: 0.0625rem solid mintcream;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    max-width: 37.5rem;
+    background-color: whitesmoke;
+    text-align: left;
+}
+
+.zalba-kategorije {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.zalba-kategorije {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.zalba-kategorije label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.zalba-kategorije input[type="radio"] {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.125rem solid dimgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.zalba-kategorije input[type="radio"]:checked {
+    background-color: royalblue;
+    border-color: royalblue;
+}
+
+
+.zalba-gumbi {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.zalba-gumbi button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.zalba-gumbi button:hover {
+    background-color: darkblue;
+}
+
+.zalba-container {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
